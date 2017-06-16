@@ -1,0 +1,62 @@
+<%= form_for(game_event) do |f| %>
+  <% if game_event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(game_event.errors.count, "error") %> prohibited this game_event from being saved:</h2>
+
+      <ul>
+      <% game_event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :event %>
+    <%= f.text_area :event %>
+  </div>
+
+  <div class="field">
+    <%= f.label :option_1_message %>
+    <%= f.text_field :option_1_message %>
+  </div>
+
+  <div class="field">
+    <%= f.label :option_1_fn_body %>
+    <%= f.text_area :option_1_fn_body %>
+  </div>
+
+  <div class="field">
+    <%= f.label :option_1_fn_return_message %>
+    <%= f.text_field :option_1_fn_return_message %>
+  </div>
+
+  <div class="field">
+    <%= f.label :option_1_fn_end %>
+    <%= f.check_box :option_1_fn_end %>
+  </div>
+
+  <div class="field">
+    <%= f.label :option_2_message %>
+    <%= f.text_field :option_2_message %>
+  </div>
+
+  <div class="field">
+    <%= f.label :option_2_fn_body %>
+    <%= f.text_area :option_2_fn_body %>
+  </div>
+
+  <div class="field">
+    <%= f.label :option_2_fn_return_message %>
+    <%= f.text_field :option_2_fn_return_message %>
+  </div>
+
+  <div class="field">
+    <%= f.label :option_2_fn_end %>
+    <%= f.check_box :option_2_fn_end %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

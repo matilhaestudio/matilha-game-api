@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event: MyText
+  option_1_message: MyString
+  option_1_fn_body: MyText
+  option_1_fn_return_message: MyString
+  option_1_fn_end: false
+  option_2_message: MyString
+  option_2_fn_body: MyText
+  option_2_fn_return_message: MyString
+  option_2_fn_end: false
+
+two:
+  event: MyText
+  option_1_message: MyString
+  option_1_fn_body: MyText
+  option_1_fn_return_message: MyString
+  option_1_fn_end: false
+  option_2_message: MyString
+  option_2_fn_body: MyText
+  option_2_fn_return_message: MyString
+  option_2_fn_end: false

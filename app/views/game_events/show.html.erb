@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @game_event.event %>
+</p>
+
+<p>
+  <strong>Option 1 message:</strong>
+  <%= @game_event.option_1_message %>
+</p>
+
+<p>
+  <strong>Option 1 fn body:</strong>
+  <%= @game_event.option_1_fn_body %>
+</p>
+
+<p>
+  <strong>Option 1 fn return message:</strong>
+  <%= @game_event.option_1_fn_return_message %>
+</p>
+
+<p>
+  <strong>Option 1 fn end:</strong>
+  <%= @game_event.option_1_fn_end %>
+</p>
+
+<p>
+  <strong>Option 2 message:</strong>
+  <%= @game_event.option_2_message %>
+</p>
+
+<p>
+  <strong>Option 2 fn body:</strong>
+  <%= @game_event.option_2_fn_body %>
+</p>
+
+<p>
+  <strong>Option 2 fn return message:</strong>
+  <%= @game_event.option_2_fn_return_message %>
+</p>
+
+<p>
+  <strong>Option 2 fn end:</strong>
+  <%= @game_event.option_2_fn_end %>
+</p>
+
+<%= link_to 'Edit', edit_game_event_path(@game_event) %> |
+<%= link_to 'Back', game_events_path %>
